@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap');
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+:root {
+  --ff-corpo: 'Outfit', sans-serif;
+  --ff-titulo: 'Cormorant Garamond', serif;
+  --creme: #f7f1e8;
+  --texto: #333333;
+  --preto: #111111;
+}
+
+body {
+  font-family: var(--ff-corpo);
+  background: var(--creme);
+  color: var(--texto);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  height: 100vh;           /* ocupa a altura toda da tela */
+}
+
+.container {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-titulo);
+  color: var(--preto);
+  line-height: 1.2;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--preto);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+p { color: var(--texto-leve); margin-bottom: 1rem; }
+a { color: inherit; text-decoration: none; }
